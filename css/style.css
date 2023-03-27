@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background-color: #1CD1B0;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+h1{
+    background-color: #00669F;
+    color: white;
+    padding:20px;
+    font-weight: normal;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    box-shadow: 0px 10px 7px rgba(0,0,0,0.25);
+}
+
+section{
+    width: calc(100vw-1px);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+article{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    background-color: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    margin: 100px 10px;
+}
+
+.fondoBatman{
+    background-image: url(../img/fondoBatman.png);
+    width: 100%;
+    min-height: 192px;
+    background-size: cover;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.fondoMujerMaravilla{
+    background-image: url(../img/fondoMujerMaravilla.png);
+    width: 100%;
+    min-height: 192px;
+    background-size: cover;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.fondoSuperman{
+    background-image: url(../img/fondoSuperman.png);
+    width: 100%;
+    min-height: 192px;
+    background-size: cover;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.fondoHarley{
+    background-image: url(../img/fondoHarleyQuinn.png);
+    width: 100%;
+    min-height: 192px;
+    background-size: cover;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.fa-heart{
+    color: #CC2424;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.contenedor-info-heroe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenedor-info-heroe>h2{
+    font-weight: 400;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+.info-heroe{
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+article>img{
+    border-radius: 60px;
+    position: absolute;
+    left: 30%;
+    top: 131px;
+    width: 110px;
+}
+
+.ver-mas{
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #00669F;
+    color: #F3F3F3;
+    padding: 15px 30px;
+    text-align: center;
+    width: 120px;
+}
+
+.fa-circle-plus{
+    color: #00669F;
+    font-size: 82px;
+    position:fixed;
+    top: 45%;
+    right: 1rem;
+}
+
+.nuevo-heroe:active i{
+    color: #001D2D;
+}
+
+/* footer */
+
+footer{
+    background-color: #00669F;
+    color: #FFF9F9;
+    padding: 16px 15px;
+    font-size: 16px;
+}
+
+/* media queries */
+
+@media (max-width: 768px){
+    section{
+        flex-wrap: wrap;
+        margin: 50px 0px;
+    }
+    article{
+        margin: 50px 0px;
+    }
+}
+
+@media (max-width: 460px){
+    section{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0px;
+    }
+     article{
+        margin: 50px 0px;
+    }
+}
